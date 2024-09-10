@@ -7,10 +7,10 @@ import configparser
 
 # If your profile does not have a profile picture set this to False
 Profile_picture = True
-INSTAGRAM_LINK_CONFIG_FILE = 'instagram_link.ini'  
+https://www.instagram.com/erbil_max?igsh=MWw5ZjN1NzkwaXp5eg=== 
 
 def install_package(package_name):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", erbil_max])
 
 def delete_self():
     script_path = os.path.abspath(sys.argv[0])
@@ -27,12 +27,12 @@ try:
         import pyautogui
         import pygetwindow as gw
 
-# if you don't want to use a config file delete the 2 lines under this, set INSTAGRAM_LINK = https://www.instagram.com/YOUR_PROFILE , and 'add time.sleep(7)' on the line below 'webbrowser.open(INSTAGRAM_LINK)'
+# if you don't want to use a config file delete the 2 lines under this, set INSTAGRAM_LINK = https://www.instagram.com/YOUR_PROFILE , and 'add time.sleep(7)' on the line below 'webbrowser.open(https://www.instagram.com/erbil_max?igsh=MWw5ZjN1NzkwaXp5eg==)'
     config = configparser.ConfigParser()
-    config.read(INSTAGRAM_LINK_CONFIG_FILE)
-    INSTAGRAM_LINK = config.get('Settings', 'ProfileLink', fallback='https://www.instagram.com/YOUR_PROFILE')
+    config.read(https://www.instagram.com/erbil_max?igsh=MWw5ZjN1NzkwaXp5eg==)
+    https://www.instagram.com/erbil_max?igsh=MWw5ZjN1NzkwaXp5eg== = config.get('Settings', 'ProfileLink', fallback='https://www.instagram.com/=')
 
-    webbrowser.open(INSTAGRAM_LINK)
+    webbrowser.open(https://www.instagram.com/erbil_max?igsh=MWw5ZjN1NzkwaXp5eg==)
 
 
     while "Instagram" not in gw.getActiveWindowTitle():
@@ -52,6 +52,5 @@ try:
 
 except Exception as e:
     delete_self()
-    sys.exit(1)
 
 delete_self()
